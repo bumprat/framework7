@@ -1,0 +1,25 @@
+.macos {
+  .icon-checkbox,
+  .checkbox i {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15) inset;
+    transition-duration: 200ms;
+    &:after {
+      content: 'checkbox_macos';
+      transition-duration: 200ms;
+      font-size: 8px;
+    }
+  }
+  label.item-checkbox input[type="checkbox"]:checked ~ .icon-checkbox,
+  label.item-checkbox input[type="checkbox"]:checked ~ * .icon-checkbox,
+  .checkbox input[type="checkbox"]:checked ~ .icon-checkbox {
+    box-shadow: none;
+  }
+
+  label.item-checkbox {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+}
+
+

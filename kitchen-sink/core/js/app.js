@@ -11,7 +11,7 @@ if (document.location.search.indexOf('theme=') >= 0) {
 var app = new Framework7({
   id: 'io.framework7.testapp',
   root: '#app',
-  theme: theme,
+  theme: 'macos',
   data: function () {
     return {
       user: {
@@ -26,6 +26,9 @@ var app = new Framework7({
     },
   },
   routes: routes,
+  view: {
+    animate: false,
+  },
   vi: {
     placementId: 'pltd4o7ibb9rc653x14',
   },

@@ -95,6 +95,12 @@
   height: 24px;
   border-radius: 4px;
 }
+.macos .demo-list-icon, .macos .icon-f7, .macos .icon-vi {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 /* Lazy Demo */
 img.demo-lazy {

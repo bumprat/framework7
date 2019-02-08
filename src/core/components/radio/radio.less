@@ -17,7 +17,8 @@
   flex-shrink: 0;
 }
 .radio .icon-radio,
-.md .icon-radio {
+.md .icon-radio,
+.macos .icon-radio {
   border: var(--f7-radio-border-width) solid var(--f7-radio-inactive-color);
 }
 label.item-radio, .radio {
@@ -46,4 +47,7 @@ label.item-radio {
 }
 & when (@includeMdTheme) {
   @import url('./radio-md.less');
+}
+& when (@includeMacosTheme) {
+  @import url('./radio-macos.less');
 }

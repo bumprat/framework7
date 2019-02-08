@@ -73,6 +73,7 @@ button {
   --f7-button-bg-color: var(--f7-button-fill-bg-color, var(--f7-theme-color));
   --f7-button-text-color: var(--f7-button-fill-text-color, #fff);
   --f7-touch-ripple-color: var(--f7-touch-ripple-white);
+  --f7-button-pressed-text-color: var(--f7-button-fill-pressed-text-color, --f7-button-pressed-text-color);
 }
 .button-fill,
 .ios .button-fill-ios,
@@ -216,4 +217,7 @@ button {
 }
 & when (@includeMdTheme) {
   @import url('./button-md.less');
+}
+& when (@includeMacosTheme) {
+  @import url('./button-macos.less');
 }
